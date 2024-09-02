@@ -1,0 +1,153 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1c1c3d;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+}
+
+.quiz-container {
+    background-color: #2d2d5e;
+    border-radius: 15px;
+    width: 400px;
+    padding: 20px;
+    text-align: center;
+}
+
+#quiz h2 {
+    margin-bottom: 20px;
+    font-size: 22px;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #f93c64, #ffb647);
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #222254;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.option:hover {
+    background-color: #3e3e75;
+}
+
+.option span {
+    background-color: #ffd700;
+    color: #222254;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+#submit {
+    background-color: #ffd700;
+    color: #222254;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+#submit:hover {
+    background-color: #ffcc00;
+}
+
+/* Start Screen Styles */
+#start-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background: url('path-to-your-image.jpg') no-repeat center center/cover; /* Update with the path to your image */
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+}
+
+#start-screen h2 {
+    font-size: 28px;
+    color: #fff;
+    margin-bottom: 30px;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better readability */
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.mode-btn {
+    background-color: #f93c64; /* You can adjust the button color to fit your image theme */
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.mode-btn:hover {
+    background-color: #ffb647; /* Change on hover to fit the theme */
+}
+
+/* Timer Styles */
+#timer {
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 20px;
+    background-color: #222254;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* Button Container and Buttons */
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+button {
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#next, #undo, #submit {
+    background-color: #ffd700;
+    color: #222254;
+}
+
+#next:hover, #undo:hover, #submit:hover {
+    background-color: #ffcc00;
+}
+
+button span {
+    font-size: 16px;
+    margin-left: 5px;
+}

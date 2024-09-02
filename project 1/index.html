@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GK Quiz Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <div id="start-screen">
+            <h2>Select Difficulty</h2>
+            <button class="mode-btn" data-mode="easy">Easy</button>
+            <button class="mode-btn" data-mode="normal">Normal</button>
+            <button class="mode-btn" data-mode="hard">Hard</button>
+        </div>
+        <div id="quiz" style="display:none;">
+            <h2 id="question">Question text</h2>
+            <div class="options">
+                <div class="option" id="a" onclick="selectAnswer('a')">
+                    <span>A</span>
+                    <p id="a_text">Answer A</p>
+                </div>
+                <div class="option" id="b" onclick="selectAnswer('b')">
+                    <span>B</span>
+                    <p id="b_text">Answer B</p>
+                </div>
+                <div class="option" id="c" onclick="selectAnswer('c')">
+                    <span>C</span>
+                    <p id="c_text">Answer C</p>
+                </div>
+                <div class="option" id="d" onclick="selectAnswer('d')">
+                    <span>D</span>
+                    <p id="d_text">Answer D</p>
+                </div>
+            </div>
+            <div id="timer">Time Left: 5:00</div>
+            <div class="button-container">
+                <button id="undo" onclick="undoQuestion()">Undo <span>&#9664;</span></button>
+                <button id="next" onclick="nextQuestion()">Next <span>&#9654;</span></button>
+                <button id="submit" onclick="submitQuiz()">Submit</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
